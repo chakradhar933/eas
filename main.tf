@@ -5,7 +5,6 @@ terraform {
     }
   }
 }
-
   provider "aws" {
   region = "us-east-1"
 }
@@ -16,7 +15,4 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
-}
-
-terraform fmt {
 }
